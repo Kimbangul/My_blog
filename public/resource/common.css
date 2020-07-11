@@ -345,12 +345,12 @@ html {
     background-color: black;
     color: white;
     height: 100px;
-
+    transition: color 0.5s , background-color 0.5s;
   }
 
   .top-bar .menu-box-1 > ul > li:hover > a{
-    background-color: white;
-    color: black;
+    background-color: gold;
+    color: coral;
     font-weight: bold;
   }
 

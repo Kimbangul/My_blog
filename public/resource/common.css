@@ -348,10 +348,49 @@ html {
     transition: color 0.5s , background-color 0.5s;
   }
 
+  .top-bar .logo{
+    padding: 0 50px;
+    font-size: 3rem;
+  }
+
+  .top-bar .menu-box-1 > ul > li{
+    position: relative;
+  }
+
   .top-bar .menu-box-1 > ul > li:hover > a{
-    background-color: gold;
-    color: coral;
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+ 
+  }
+
+  .top-bar .menu-box-1 ul > li > a{
     font-weight: bold;
   }
 
-  
+  .top-bar .menu-box-1 > ul ul{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: -2px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-top: 0;
+  }
+
+  .top-bar .menu-box-1 > ul > li:hover > ul{
+    display: block;
+  }
+
+  .top-bar .menu-box-1 > ul ul > li > a{
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .top-bar .menu-box-1 > ul ul > li:hover > a{
+    background-color: black;
+    color: white;
+  }

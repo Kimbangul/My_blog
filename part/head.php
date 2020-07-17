@@ -7,12 +7,23 @@
     <title>BLOG</title>
     <link rel="stylesheet" href="/resource/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     <script src="/resource/common.js"></script>
+    
     <!-- / : 퍼블릭 폴더 -->
 </head>
 
 <body>
-    <div class="top-bar ">
+    <div class="mobile-top-bar visible-sm-down flex flex-ai-c">
+        <a href="#">
+        <div class="btn-toggle-mobile-side-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </a>
+    </div>
+    <div class="top-bar visible-md-up">
         <div class="con height-100p flex ">
             <a href="/" class="logo flex flex-ai-c">
             <i class="fas fa-clone"></i>

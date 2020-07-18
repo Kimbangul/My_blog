@@ -473,3 +473,17 @@ html {
     margin: 0 20px;
   }
   
+  /* 모바일 사이드바 시작 */
+  .mobile-side-bar{
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    width: 300px;
+    height: calc(100% - 50px);
+    background: red;
+    transition: left 1s;
+  }
+
+  .mobile-side-bar.active{
+    left: 0;
+  }

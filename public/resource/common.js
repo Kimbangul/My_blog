@@ -3,12 +3,14 @@
 $(document).ready(function () {
 
     function mobileBtnEvent() {
+        var $btn = $('.btn-toggle-mobile-side-bar');
 
         function mobileSideBar(e) {
             e.preventDefault();
-            $(this).toggleClass('active');
+            $btn.toggleClass('active');
+            $('.mobile-side-bar').toggleClass('active');
         }
-        $('.btn-toggle-mobile-side-bar').click(mobileSideBar);
+        $btn.click(mobileSideBar);
 
     }
 

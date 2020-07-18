@@ -20,9 +20,14 @@
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div>        
         </a>
     </div>
+    
+    <div class="mobile-side-bar">
+    
+    </div>
+
     <div class="top-bar visible-md-up">
         <div class="con height-100p flex ">
             <a href="/" class="logo flex flex-ai-c">

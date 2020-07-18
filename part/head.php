@@ -24,8 +24,11 @@
         </a>
     </div>
     
+    <div class="mobile-side-bar-bg">
+        
+    </div>
     <div class="mobile-side-bar">
-    
+
     </div>
 
     <div class="top-bar visible-md-up">

@@ -3,12 +3,15 @@
     // ../ -> 부모(상위) 폴더로
 ?>
 <?php
-  $conn = mysqli_connect("localhost", "root", "", "blog", 3306);
+  $conn = mysqli_connect("localhost", "root", "", "site", 3306);
+
+  mysqli_query($conn, "SET NAMES utf8mb4;");
+  
   $id = $_GET['id'];
   $sql = "
     SELECT *
     FROM article
-    WHERE id = $id
+    WHERE id = {$id}
   ";
 
   $rs = mysqli_query($conn, $sql); 

@@ -37,3 +37,11 @@ CREATE TABLE cateItem(
 INSERT INTO cateItem SET regDate = NOW(), `name` = 'Web Design';
 INSERT INTO cateItem SET regDate = NOW(), `name` = 'Illust';
 INSERT INTO cateItem SET regDate = NOW(), `name` = 'Bangul';
+
+
+#게시물 추가
+INSERT INTO article SET regDate = NOW(), updateDate = NOW(), cateItemId = 2,
+title = '제목', `body` = '';
+
+INSERT INTO article SET regDate = NOW(), updateDate = NOW(), cateItemId = 3,
+title = '제목', `body` = '';

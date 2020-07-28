@@ -6,6 +6,7 @@
   $conn = mysqli_connect("localhost", "root", "", "site", 3306);
 
   mysqli_query($conn, "SET NAMES utf8mb4;");
+  // 인코딩
   
   $id = $_GET['id'];
   $sql = "

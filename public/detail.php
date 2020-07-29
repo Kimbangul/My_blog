@@ -22,6 +22,8 @@
 
 ?>
 
+
+
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
@@ -61,28 +63,25 @@
 <div class="con">
     작성자 : 김방울
 </div>
-<div class="con" style="display:none;" id="origin1">
-<?=$row['body']?>
-</div>
+<script type="text/x-template" style="display:none;" id="origin1"><?=$row['body']?></script>
 <div class="con" id ="viewer1"> 
        
 </div>
 
 
-
-
-
-
 <script>
-var editor1__initialValue = $('#origin1').html();
-var editor1 = new toastui.Editor({
-  el: document.querySelector('#viewer1'),
-  height: '600px',
-  initialValue: editor1__initialValue,
-  viewer:true,
-  plugins: [toastui.Editor.plugin.codeSyntaxHighlight]
-});
+      var editor1__initialValue = $('#origin1').html();
+      var editor1 = new toastui.Editor({
+        el: document.querySelector("#viewer1"),
+        viewer:true,
+        initialValue: editor1__initialValue,
+        plugins: [toastui.Editor.plugin.codeSyntaxHighlight, youtubePlugin, replPlugin, codepenPlugin]
+      });
 </script>
+
+
+
+
 
 <?php
     include "../part/foot.php";

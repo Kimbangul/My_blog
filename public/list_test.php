@@ -43,19 +43,22 @@ while (true){
 
 // http://localhost:8021/list_test.php?cateItemId=1
 ?>
+<div class="con"><h1>카테고리 : <?=$cateItemName?></h1></div>
 
-<h1>카테고리 : <?=$cateItemName?></h1>
 
-
+<div class="con">
 <?php foreach ($articleRows as $article){?>
-<div>
+    <div>
+    <img src="<?=$article['thumbImgUrl']?>" alt="thumb"><br>
    <a href="./detail.php?id=<?=$article['id']?>">
    번호 : <?=$article['id']?>, 
    제목 : <?=$article['title']?>, 
-   작성날짜 : <?=$article['regDate']?>
+   작성날짜 : <?=$article['regDate']?>   
    </a> 
 </div>
 
 <?php
 }    
-?>
+?> 
+
+</div>
